@@ -8,14 +8,18 @@ function addNewRow(){
     let outerContainer = consoleContainer.parentNode;
 	let angleRight = consoleRow.querySelector(".angle-right");
 
+	let madH1 = document.createElement("h1");
+
     if(outerContainer.querySelector("#enterBtn").innerText == "Enter")
         {
-            consoleRow.querySelector("#status").innerText = "Entered Metaverse";
+			madH1.innerText = "Entered Metaverse";
+            consoleRow.querySelector("#status").appendChild(madH1);
             outerContainer.querySelector("#enterBtn").innerText = "Leave"
         }
     else if(outerContainer.querySelector("#enterBtn").innerText == "Leave")
         {
-            consoleRow.querySelector("#status").innerText = "Enter Metaverse";
+			madH1.innerText = "Entered Metaverse";
+            consoleRow.querySelector("#status").appendChild(madH1);
             outerContainer.querySelector("#enterBtn").innerText = "Enter";
         }
     
