@@ -13,12 +13,14 @@ function addNewRow(){
     if(outerContainer.querySelector("#enterBtn").innerText == "Enter")
         {
 			madH1.innerText = "Entered Metaverse";
+			consoleRow.querySelector("#status").innerText = "";
             consoleRow.querySelector("#status").appendChild(madH1);
             outerContainer.querySelector("#enterBtn").innerText = "Leave"
         }
     else if(outerContainer.querySelector("#enterBtn").innerText == "Leave")
         {
-			madH1.innerText = "Entered Metaverse";
+			madH1.innerText = "Enter Metaverse";
+			consoleRow.querySelector("#status").innerText = "";
             consoleRow.querySelector("#status").appendChild(madH1);
             outerContainer.querySelector("#enterBtn").innerText = "Enter";
         }
