@@ -18,7 +18,5 @@ function addNewRow(){
             consoleRow.querySelector("#status").innerText = "Enter Metaverse";
             outerContainer.querySelector("#enterBtn").innerText = "Enter";
         }
-
-
-    consoleContainer.appendChild(newRow);
+    
 }
